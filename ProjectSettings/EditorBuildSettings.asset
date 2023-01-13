@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Network Test/StartScene.unity
     guid: 5cf5519dd268ab543a5018acca083bd5
-  - enabled: 0
-    path: Assets/Normal/Examples/Cube Player/Realtime + Cube Player.unity
-    guid: 5b016352eb5f97a48b7f489f049b0930
   - enabled: 1
     path: Assets/Scenes/Network Test/NetworkedColorTest.unity
     guid: dc07102158092f3428c52705433dcbd6
