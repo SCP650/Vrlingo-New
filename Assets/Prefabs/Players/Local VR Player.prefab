@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 5986898500902046427}
   - component: {fileID: 5986898500902046420}
   m_Layer: 0
-  m_Name: XR Origin
+  m_Name: Local VR Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
