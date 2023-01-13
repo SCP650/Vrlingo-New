@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Network Test/StartScene.unity
     guid: 5cf5519dd268ab543a5018acca083bd5
   - enabled: 1
-    path: Assets/Scenes/Network Test/NetworkedColorTest.unity
-    guid: dc07102158092f3428c52705433dcbd6
+    path: Assets/Scenes/MVP Scenes/RestaurantMVP.unity
+    guid: d9f75674bbb90d749a36cff2e9e07af5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9dd5b4ca6ef7711468278d29f51c68cd, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d565d5b7263ffc47894388db01401c4, type: 2}
