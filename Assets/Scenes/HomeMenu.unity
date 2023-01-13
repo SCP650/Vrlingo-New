@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 752402117}
   - component: {fileID: 752402116}
   m_Layer: 0
-  m_Name: w
+  m_Name: PodiumPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 1304955723}
   - component: {fileID: 1304955722}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 1655424570}
   - component: {fileID: 1655424569}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: PodiumStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
