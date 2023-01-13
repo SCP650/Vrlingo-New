@@ -12,4 +12,5 @@ EditorBuildSettings:
     path: Assets/Normal/Examples/Cube Player/Realtime + Cube Player.unity
     guid: 5b016352eb5f97a48b7f489f049b0930
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9dd5b4ca6ef7711468278d29f51c68cd, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d565d5b7263ffc47894388db01401c4, type: 2}
