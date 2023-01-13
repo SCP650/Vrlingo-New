@@ -8,7 +8,12 @@ public class TestTravel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(WaitThenTravel());
+        //StartCoroutine(WaitThenTravel());
+    }
+
+    public void Travel()
+    {
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator WaitThenTravel()

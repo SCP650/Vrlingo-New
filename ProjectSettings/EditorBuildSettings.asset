@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Network Test/StartScene.unity
-    guid: 5cf5519dd268ab543a5018acca083bd5
+    path: Assets/Scenes/MVP Scenes/UITestSceneMVP.unity
+    guid: bdbce91b5415b324394efd118bfe7a0e
   - enabled: 1
     path: Assets/Scenes/MVP Scenes/RestaurantMVP.unity
     guid: d9f75674bbb90d749a36cff2e9e07af5
