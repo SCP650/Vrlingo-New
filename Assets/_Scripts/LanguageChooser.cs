@@ -8,28 +8,33 @@ public class LanguageChooser : MonoBehaviour
 {
     public TextMeshProUGUI teachingLangText;
     public TextMeshProUGUI learningLangText;
+    public TextMeshProUGUI profileTeachLT;
+    public TextMeshProUGUI profileLearnLT;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject turtle;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        turtle.SetActive(false);
+        turtle.transform.localScale = Vector3.zero;
     }
 
     public void SetTeachingLanguage(string lang)
     {
         teachingLangText.text = lang.ToString();
+        profileTeachLT.text = lang.ToString();
     }
 
     public void SetLearningLanguage(string lang)
     {
-        learningLangText.text = lang.ToString();
+        learningLangText.text = "Teaching " + lang.ToString();
+        profileLearnLT.text = "Learning " + lang.ToString();
     }
 
+    public void SummonTheTurtle()
+    {
+        turtle.SetActive(true);
+        Tween.LocalScale(turtle.transform, Vector3.one, 4f, 0f);
+    }
 
 }
