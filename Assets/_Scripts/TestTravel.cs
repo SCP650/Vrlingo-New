@@ -16,6 +16,12 @@ public class TestTravel : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    [Tooltip("Return to Home World")]
+    public void TravelBackToTheFuture() 
+    {
+        SceneManager.LoadScene(0);
+    }
+
     IEnumerator WaitThenTravel()
     {
         yield return new WaitForSeconds(5);
