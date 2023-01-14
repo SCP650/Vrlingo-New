@@ -8,28 +8,20 @@ public class LanguageChooser : MonoBehaviour
 {
     public TextMeshProUGUI teachingLangText;
     public TextMeshProUGUI learningLangText;
+    public TextMeshProUGUI profileTeachLT;
+    public TextMeshProUGUI profileLearnLT;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SetTeachingLanguage(string lang)
     {
         teachingLangText.text = lang.ToString();
+        profileTeachLT.text = lang.ToString();
     }
 
     public void SetLearningLanguage(string lang)
     {
-        learningLangText.text = lang.ToString();
+        learningLangText.text = "Teaching " + lang.ToString();
+        profileLearnLT.text = "Learning " + lang.ToString();
     }
-
 
 }
