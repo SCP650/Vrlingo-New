@@ -479,7 +479,7 @@ MonoBehaviour:
   keyInput: 43010000
   _unityEventsFolded: 1
   _scaleResponseFolded: 0
-  _colorResponseFolded: 0
+  _colorResponseFolded: 1
   applyColor: 1
   applyScale: 0
   collisionLayerMask:
@@ -488,7 +488,7 @@ MonoBehaviour:
   colorRendererTarget: {fileID: 0}
   colorImageTarget: {fileID: 1947108465210483108}
   selectedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  pressedColor: {r: 0, g: 1, b: 0, a: 1}
+  pressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   disabledColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   colorDuration: 0.1
   scaleTarget: {fileID: 1947108465210483130}
