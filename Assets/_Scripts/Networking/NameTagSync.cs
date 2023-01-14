@@ -6,6 +6,15 @@ using UnityEngine;
 public class NameTagSync : RealtimeComponent<NameTagSyncModel>
 {
     public GameObject nameTagObject;
+    public bool hasTeacherFlag;
+    private void Start()
+    {
+        if (GetComponent<RealtimeTransform>().isOwnedLocallyInHierarchy)
+        {
+            model.isTeacher = PlayerPrefs.GetInt("IsTeacher") == 1;
+        }
+    }
+
     private void NameTagDidChange(NameTagSyncModel model, bool value)
     {
         ToggleNameTag(value);
@@ -13,6 +22,7 @@ public class NameTagSync : RealtimeComponent<NameTagSyncModel>
 
     private void ToggleNameTag(bool isTeacher)
     {
+        hasTeacherFlag = isTeacher;
         nameTagObject.SetActive(isTeacher);
     }
 
@@ -27,10 +37,11 @@ public class NameTagSync : RealtimeComponent<NameTagSyncModel>
         if (currentModel != null)
         {
             // If this is a model that has no data set on it, populate it with the current mesh renderer color.
-            if (currentModel.isFreshModel)
-                currentModel.isTeacher = PlayerPrefs.GetInt("IsTeacher") == 1;
+            if (!currentModel.isFreshModel)
+            {
+                ToggleNameTag(currentModel.isTeacher);
+            }
 
-            ToggleNameTag(currentModel.isTeacher);
 
             // Register for events so we'll know if the color changes later
             currentModel.isTeacherDidChange += NameTagDidChange;
