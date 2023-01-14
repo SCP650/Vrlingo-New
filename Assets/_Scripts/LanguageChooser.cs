@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pixelplacement;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LanguageChooser : MonoBehaviour
 {
@@ -29,6 +30,22 @@ public class LanguageChooser : MonoBehaviour
     {
         //learningLangText.text = "Teaching " + lang.ToString();
         profileLearnLT.text = lang.ToString();
+    }
+
+    public void SetRole(string lang)
+    {
+        if(profileLearnLT.text == lang.ToString())
+        {
+            // student 
+            PlayerPrefs.SetInt("IsTeacher", 0);
+            SceneManager.LoadScene(1);
+        }
+        else
+        {
+            //teacher
+            PlayerPrefs.SetInt("IsTeacher", 1);
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void SummonTheTurtle()

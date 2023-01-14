@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class NameTagSetter : MonoBehaviour
 {
-    public void SetAsTeacher()
+
+    private void SetAsTeacher()
     {
         PlayerPrefs.SetInt("IsTeacher", 1);
         SceneManager.LoadScene(1);
     }
 
-    public void SetAsStudent()
+    private void SetAsStudent()
     {
         PlayerPrefs.SetInt("IsTeacher", 0);
         SceneManager.LoadScene(1);
