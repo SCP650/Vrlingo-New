@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MVP Scenes/UITestSceneMVP.unity
     guid: bdbce91b5415b324394efd118bfe7a0e
   - enabled: 1
-    path: Assets/Scenes/Restaurant COPY.unity
-    guid: e4c0a8082b3f30847bad6d3e66cc4117
-  - enabled: 0
     path: Assets/Scenes/MVP Scenes/RestaurantMVP.unity
     guid: d9f75674bbb90d749a36cff2e9e07af5
   - enabled: 1
-    path: Assets/Scenes/Interactions Test/RestaurantInteractions.unity
-    guid: d78c5cfaafdbda943ada0b838288cbf2
+    path: Assets/Scenes/Teacher Flag Test/SetUserFlagScene.unity
+    guid: f60fa946980db224cb00e8ed56c7041f
+  - enabled: 1
+    path: Assets/Scenes/Teacher Flag Test/SeeUserFlagScene.unity
+    guid: 8ab0e938022c9704186e49e6ccf1f126
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9dd5b4ca6ef7711468278d29f51c68cd, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d565d5b7263ffc47894388db01401c4, type: 2}
