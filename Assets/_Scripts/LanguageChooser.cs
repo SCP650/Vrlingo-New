@@ -11,6 +11,13 @@ public class LanguageChooser : MonoBehaviour
     public TextMeshProUGUI profileTeachLT;
     public TextMeshProUGUI profileLearnLT;
 
+    public GameObject turtle;
+
+    private void Start()
+    {
+        turtle.SetActive(false);
+        turtle.transform.localScale = Vector3.zero;
+    }
 
     public void SetTeachingLanguage(string lang)
     {
@@ -22,6 +29,12 @@ public class LanguageChooser : MonoBehaviour
     {
         learningLangText.text = "Teaching " + lang.ToString();
         profileLearnLT.text = "Learning " + lang.ToString();
+    }
+
+    public void SummonTheTurtle()
+    {
+        turtle.SetActive(true);
+        Tween.LocalScale(turtle.transform, Vector3.one, 2f, 0f);
     }
 
 }
