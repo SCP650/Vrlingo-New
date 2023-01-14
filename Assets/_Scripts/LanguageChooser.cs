@@ -34,7 +34,7 @@ public class LanguageChooser : MonoBehaviour
     public void SummonTheTurtle()
     {
         turtle.SetActive(true);
-        Tween.LocalScale(turtle.transform, Vector3.one, 2f, 0f);
+        Tween.LocalScale(turtle.transform, Vector3.one, 4f, 0f);
     }
 
 }
