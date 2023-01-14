@@ -14,27 +14,27 @@ public class DoorTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (PlayerPrefs.GetInt("IsTeacher") == 0)
-        //{
+        if (PlayerPrefs.GetInt("IsTeacher") == 0)
+        {
             if (other.gameObject.name == "Local VR Player")
             {
                 Debug.Log("TRIGGER TRIGGERED");
                 Tween.LocalScale(creditsCanvas, new Vector3(0.01f, 0.01f, 0.01f), 0.5f, 0f);
             }
-        //}
+        }
     }
 
     
     private void OnTriggerExit(Collider other)
     {
-        //if (PlayerPrefs.GetInt("IsTeacher") == 0)
-        //{
+        if (PlayerPrefs.GetInt("IsTeacher") == 0)
+        {
             if (other.name == "Local VR Player")
             {
                 Debug.Log("TRIGGER ALSO TRIGGERED");
                 Tween.LocalScale(creditsCanvas, Vector3.zero, 0.2f, 0f);
             }
-        //}
+        }
     }
     
 }
