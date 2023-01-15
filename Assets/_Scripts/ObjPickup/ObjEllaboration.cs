@@ -18,7 +18,7 @@ public class ObjEllaboration : MonoBehaviour
 
     private void Awake()
     {
-        grabber = GetComponent<XRGrabInteractable>();
+        grabber = transform.parent.GetComponent<XRGrabInteractable>();
         grabber.selectEntered.AddListener(OnGrab);
         grabber.selectExited.AddListener(OnRelease);
     }
@@ -28,12 +28,29 @@ public class ObjEllaboration : MonoBehaviour
         grabber.selectEntered.RemoveListener(OnGrab);
         grabber.selectExited.RemoveListener(OnRelease);
     }
-    void OnGrab(SelectEnterEventArgs arg)
+
+    void CreateWidget()
     {
         //create the widget
-        GameObject hintUI = Instantiate(hintPrefab);
+        GameObject hintUI = Instantiate(hintPrefab, prefabLocation.position, prefabLocation.rotation);
+
+        hintUI.transform.parent = prefabLocation;
         PickupUI widget = hintUI.GetComponent<PickupUI>();
-        widget.SetupUI(hint1, hint2,hint3); 
+        widget.SetupUI(hint1, hint2, hint3);
+
+        //cringe
+        var scale = prefabLocation.localScale;
+        scale.x *= -1.0f;
+        prefabLocation.localScale = scale;
+    }
+    private void Start()
+    {
+        CreateWidget();
+    }
+
+    void OnGrab(SelectEnterEventArgs arg)
+    {
+        CreateWidget();
     }
 
     void OnRelease(SelectExitEventArgs arg)
