@@ -13,7 +13,7 @@ public class ObjEllaboration : MonoBehaviour
     private XRGrabInteractable grabber = null;
 
     public GameObject hintPrefab;
-    public GameObject hintUI; 
+    private GameObject hintUI; 
     public Transform prefabLocation;
 
     private void Awake()
