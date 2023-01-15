@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.002707359, g: 0.043018144, b: 0.124686, a: 1}
+  m_IndirectSpecularColor: {r: 0.002707384, g: 0.043018132, b: 0.12468605, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -296,6 +296,10 @@ PrefabInstance:
     - target: {fileID: 1727632803350599231, guid: 9cbb0c78fed5b3446bcebf4d10e9a51e, type: 3}
       propertyPath: m_Name
       value: World
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730097865026507520, guid: 9cbb0c78fed5b3446bcebf4d10e9a51e, type: 3}
+      propertyPath: waveFrequency
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7702582705837582156, guid: 9cbb0c78fed5b3446bcebf4d10e9a51e, type: 3}
       propertyPath: m_audioClip
