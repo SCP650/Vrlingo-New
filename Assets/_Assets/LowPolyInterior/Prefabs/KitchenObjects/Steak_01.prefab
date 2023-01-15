@@ -335,6 +335,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint1: Discuss how you like your steak cooked
   hint2: Serve the raw steak on a plate to someone
-  hint3: Find a waiter to complain about being served a raw steak
+  hint3: Complain to waiter about raw steak
   hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
   prefabLocation: {fileID: 7299902692897027909}

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint1: Make the fried fries fly
-  hint2: Discuss whether French fries are really French
+  hint2: Are French fries are really French?
   hint3: Talk about your favorite potato-based food
   hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
   prefabLocation: {fileID: 2966463174957668465}
