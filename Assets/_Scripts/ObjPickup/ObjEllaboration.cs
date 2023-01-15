@@ -38,14 +38,14 @@ public class ObjEllaboration : MonoBehaviour
         PickupUI widget = hintUI.GetComponent<PickupUI>();
         widget.SetupUI(hint1, hint2, hint3);
 
-        //cringe
+/*        //cringe
         var scale = prefabLocation.localScale;
         scale.x *= -1.0f;
-        prefabLocation.localScale = scale;
+        prefabLocation.localScale = scale;*/
     }
     private void Start()
     {
-        CreateWidget();
+        //CreateWidget();
     }
 
     void OnGrab(SelectEnterEventArgs arg)
