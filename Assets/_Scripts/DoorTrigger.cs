@@ -16,6 +16,12 @@ public class DoorTrigger : MonoBehaviour
         exitCanvas.gameObject.SetActive(false);
     }
 
+    public void ShowExitPanel()
+    {
+        exitCanvas.gameObject.SetActive(true);
+        Tween.LocalScale(exitCanvas, new Vector3(0.01f, 0.01f, 0.01f), 0.5f, 0f);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log($"on trigger enter {other.name}");
