@@ -3742,6 +3742,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -49.30003
       objectReference: {fileID: 0}
+    - target: {fileID: 1075825178821359015, guid: 95d8a3874f1947446afff7db584ca96f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f82ae4885e972644a31b0eba92de953, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95d8a3874f1947446afff7db584ca96f, type: 3}
 --- !u!224 &666891062 stripped
@@ -3833,10 +3837,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 588138717}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 951179144}
+        m_TargetAssemblyTypeName: DoorTrigger, Assembly-CSharp
+        m_MethodName: ShowExitPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
