@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909453158}
+  - component: {fileID: 3892183376480835842}
   m_Layer: 0
   m_Name: Attachment
   m_TagString: Untagged
@@ -31,6 +32,23 @@ Transform:
   m_Father: {fileID: 4663114177116568026}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3892183376480835842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909453157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f2e6b29d601c942a83840c0a78af04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint1: I am still alive. Why?
+  hint2: I'm still alive, I guess. Currently?
+  hint3: I'm alive. Hahaha
+  hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
+  prefabLocation: {fileID: 1909453158}
 --- !u!1 &4663114177116202490
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,7 +66,6 @@ GameObject:
   - component: {fileID: 740291095}
   - component: {fileID: 740291097}
   - component: {fileID: 740291098}
-  - component: {fileID: 1291469997753996751}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -321,20 +338,3 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 740291097}
   _childViews: []
---- !u!114 &1291469997753996751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4663114177116202490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29f2e6b29d601c942a83840c0a78af04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hint1: I am still alive. Why?
-  hint2: I'm still alive, I guess. Currently?
-  hint3: I'm alive. Hahaha
-  hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
-  prefabLocation: {fileID: 1909453158}

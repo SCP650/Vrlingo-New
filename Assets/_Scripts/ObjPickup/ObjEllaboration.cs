@@ -18,7 +18,7 @@ public class ObjEllaboration : MonoBehaviour
 
     private void Awake()
     {
-        grabber = GetComponent<XRGrabInteractable>();
+        grabber = transform.parent.GetComponent<XRGrabInteractable>();
         grabber.selectEntered.AddListener(OnGrab);
         grabber.selectExited.AddListener(OnRelease);
     }
