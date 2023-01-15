@@ -32,16 +32,16 @@ public class ObjEllaboration : MonoBehaviour
     void CreateWidget()
     {
         //create the widget
-        GameObject hintUI = Instantiate(hintPrefab, prefabLocation.position, prefabLocation.rotation);
+        hintUI = Instantiate(hintPrefab, prefabLocation.position, prefabLocation.rotation);
 
         hintUI.transform.parent = prefabLocation;
         PickupUI widget = hintUI.GetComponent<PickupUI>();
         widget.SetupUI(hint1, hint2, hint3);
 
-/*        //cringe
+        //cringe
         var scale = prefabLocation.localScale;
         scale.x *= -1.0f;
-        prefabLocation.localScale = scale;*/
+        prefabLocation.localScale = scale;
     }
     private void Start()
     {
