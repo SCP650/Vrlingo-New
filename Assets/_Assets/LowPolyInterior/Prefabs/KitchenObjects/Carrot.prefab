@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint1: 'Pretend a carrot is your nose. '
   hint2: 'Find someone who likes carrot '
-  hint3: 'Discuss the advantages of eating carrots everyday '
+  hint3: Any advantages of eating carrots?
   hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
   prefabLocation: {fileID: 6092050696747332221}
 --- !u!1 &7412375917091495165
