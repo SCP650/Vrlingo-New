@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint1: Share the burger with someone
-  hint2: Talk about your favorite hamburger brand with others
+  hint2: What fast food burger is best?
   hint3: Fight with a hamburger.
   hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
   prefabLocation: {fileID: 7915882896377138124}

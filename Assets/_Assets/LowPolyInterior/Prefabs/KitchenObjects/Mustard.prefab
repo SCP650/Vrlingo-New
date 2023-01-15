@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint1: 'Is mustard better than ketchup? '
-  hint2: Share the mustard with someone with burger or hotdog
+  hint2: Share mustard with someone with hotdog
   hint3: Drink the mustard
   hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
   prefabLocation: {fileID: 2670862041323154566}
