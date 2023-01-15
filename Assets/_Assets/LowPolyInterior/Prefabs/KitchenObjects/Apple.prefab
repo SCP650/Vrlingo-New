@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f2e6b29d601c942a83840c0a78af04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint1: I am still alive. Why?
-  hint2: I'm still alive, I guess. Currently?
-  hint3: I'm alive. Hahaha
+  hint1: 'Is apple better than android?  '
+  hint2: 'Red or green apple? '
+  hint3: 'Do you eat the stem of the apple? '
   hintPrefab: {fileID: 733924611053438209, guid: 875b24e25e48ae44a98d791619c8c9ac, type: 3}
   prefabLocation: {fileID: 1909453158}
 --- !u!1 &4663114177116202490
