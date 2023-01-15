@@ -21,7 +21,7 @@ public class DoorTrigger : MonoBehaviour
         Debug.Log($"on trigger enter {other.name}");
         if (other.gameObject.name == "HeadModel")
         {
-            if (PlayerPrefs.GetInt("IsTeacher") == 0)
+            if (PlayerPrefs.GetInt("IsTeacher") == 1)
             {
                 creditsCanvas.gameObject.SetActive(true);
                 Debug.Log("TRIGGER TRIGGERED");
